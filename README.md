@@ -14,3 +14,8 @@ appon connection.
 This client doesn't work on regular login forums.
 Most vulnurable servers that work with
 this client can be found using Shodan.
+
+Also credit to:
+https://GITHUB.COM/phteam/
+Because they made the original brute force
+script! All I did was teak it and patch it
