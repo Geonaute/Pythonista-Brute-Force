@@ -12,6 +12,17 @@ from sys import stdout
 from threading import Thread
 from time import sleep
 
+# patorjk.com
+print "      (                    "
+print "   (  )\ )       '    )     "
+print " ( )\(()/(   ( ` )  /((    "
+print " )((_)/(_))  )\ ( )(_))\   "
+print "((_)_(_)) _ ((_|_(_()|(_)  "
+print " | _ ) _ \ | | |_   _| __| "
+print " | _ \   / |_| | | | | _|  "
+print " |___/_|_\\_____/ |_| |___| "
+print ""
+time.sleep(3)
 
 def usage():
         print "\n-+- Usage -+-"
@@ -51,10 +62,9 @@ def scan(host, usernames, passwords):
 	      stdout.write('')
 	      stdout.flush()
 	      while(t.isAlive()):
-	        time.sleep(0xa)
+	        time.sleep(0xA)
 	except (KeyboardInterrupt, SystemExit):
           raise
-  
 
 def main():
    if len(sys.argv) == 4:
@@ -62,7 +72,7 @@ def main():
       userfile = sys.argv[2]
       passfile = sys.argv[-1]
 
-      print ' -+--=:=- Brute Force Client 1.4.2\n\n[root]: Starting Agent\n[root]: Brute Force\n\'%s\'' % (m_host)
+      print ' -+--=:=- Brute Force Client 1.5.2\n\n[root]: Starting Agent\n[root]: Brute Force\n\'%s\'' % (m_host)
       uwords = open(sys.argv[2], "r").readlines()
       pwords = open(sys.argv[3], "r").readlines()
       print "[Usernames] Loaded:",len(uwords)
@@ -112,7 +122,7 @@ def main():
          sleep(0xA)
 
       stdout.write('')
-      print '\n-+--=:=- Ending Brute Force\n\n'
+      print '\n-+--=:=- Ended Brute Force\n\n'
    else:
      usage()
 
