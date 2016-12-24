@@ -26,7 +26,7 @@ print " | _ ) _ \ | | |_   _| __| "
 print " | _ \   / |_| | | | | _|  "
 print " |___/_|_\\_____/ |_| |___|"
 print ""
-time.sleep(3)
+time.sleep(1)
 def usage():
 	console.set_color(255, 0, 0)
 	print "\n-+- Usage -+-"
@@ -49,7 +49,7 @@ def usage():
 	print "[+] Original Version:"
 	print " -  phteam"
 	return
-console.alert("Pythonista Brute v1.6.4", "Disclaimer:\nThe Target Server must be a server that wants connection authenication. Regular website login pages do not work with this version. Click the booty to continue.", "(  Y  )")
+console.alert("Pythonista Brute v1.6.4", "Disclaimer:\nThe Target Server must be a server that wants connection authenication. Regular website login pages do not work with this version.\nClick the booty to continue.", "(  Y  )")
 def basic_auth(host, username, passwd):
 	try:
 		request = urllib2.Request(host)
@@ -58,7 +58,7 @@ def basic_auth(host, username, passwd):
 		result = urllib2.urlopen(request)
 		stdout.write('[+]')
 		print 'Forcing:\n[USER]: %s\n[PASS]: %s\n' %(username, passwd)
-	except: pass
+	except: passoe
 def scan(host, usernames, passwords):
 	try:
 		for username in usernames:
